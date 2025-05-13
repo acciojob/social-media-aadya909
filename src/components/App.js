@@ -19,6 +19,11 @@ export default function App() {
           <PostList />
         </>
       )}
+       <div className="tabs">
+      <a href="#" onClick={() => setActiveTab('posts')}>Posts</a>
+      <a href="#" onClick={() => setActiveTab('users')}>Users</a>
+      <a href="#" onClick={() => setActiveTab('notifications')}>Notifications</a>
+    </div>
       {activeTab === 'users' && <Users />}
       {activeTab === 'notifications' && <Notifications />}
     </div>
